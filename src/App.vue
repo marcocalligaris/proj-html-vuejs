@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+
+    </div>
   </div>
 </template>
 
@@ -11,4 +14,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/scss/style.scss'
 </style>
