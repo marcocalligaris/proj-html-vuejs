@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div>
+  <div class="container">
 
-    </div>
   </div>
 </template>
 
@@ -14,5 +12,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/style.scss'
+@import './assets/scss/style.scss';
 </style>
