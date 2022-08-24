@@ -41,7 +41,7 @@
         <div class="container">
           <div class="row g-5 d-flex justify-content-between mb-5">
             <div v-for="item in courses" :key="item.id" class="col-4">
-              <div class="card border-0">
+              <div id="course-card" class="card border-0">
                 <div class="position-relative">
                   <div id="course-price" class="text-center py-2 px-3">
                     <span class="text-white fw-bold">{{ item.price }}</span>
@@ -217,15 +217,23 @@ ul {
 };
 #courses-section {
   background-image: linear-gradient(white, $gallery);
-  span {
-    color: gray;
-  };
-  #course-price {
-    position: absolute;
-    right: 0;
-    background-color: $green_haze;
-    width: 100px;
-    border-radius: 0 5px 0 5px;
-  };
+  #course-card {
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 30px gray;
+      transition: 1s;
+    }
+    span {
+      color: gray;
+    };
+    #course-price {
+      position: absolute;
+      right: 0;
+      background-color: $jungle_green;
+      width: 100px;
+      border-radius: 0 5px 0 5px;
+    };
+  }
 };
 </style>
