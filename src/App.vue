@@ -1,6 +1,14 @@
 <template>
   <div>
     <HeaderItem :links="headerMenu" />
+    <main>
+      <section id="careers-section">
+        <div class="text-center">
+          <p>START LEARNING CODING LANGUAGE</p>
+          <h1><strong>Build Your Dream </strong><span>TODAY</span></h1>
+        </div>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -27,4 +35,13 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/style.scss';
+h1 {
+  color: $mulled_wine;
+  span {
+    color: $jungle_green;
+  }
+};
+p {
+  color: $oslo_gray;
+}
 </style>
