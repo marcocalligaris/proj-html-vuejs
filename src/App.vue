@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderItem />
+    <HeaderItem :links="headerMenu" />
   </div>
 </template>
 
@@ -13,7 +13,12 @@ export default {
   data() {
     return {
       headerMenu:[
-        {id:1, url:'#', text:'CHARACTERS', active: false},
+        {id:1, url:'#', text:'Home'},
+        {id:2, url:'#', text:'Pages'},
+        {id:3, url:'#', text:'Courses'},
+        {id:4, url:'#', text:'Features'},
+        {id:5, url:'#', text:'Blog'},
+        {id:6, url:'#', text:'Shop'},
         ],
     }
   },
