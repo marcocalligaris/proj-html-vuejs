@@ -33,6 +33,17 @@
           </div>
         </div>
       </section>
+      <section id="courses-section">
+        <div class="text-center mb-5 generic-title">
+          <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
+          <h1><strong>Last Featured </strong><span>Courses</span></h1>
+        </div>
+        <div class="container">
+          <div class="row d-flex flex-wrap">
+
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
@@ -114,6 +125,10 @@ ul {
   background-color: $gallery;
   p.fs-1 {
     color: $jungle_green;
-  }
-}
+  };
+};
+#courses-section {
+  height: 900px;
+  background-image: linear-gradient(white, lightgray);
+};
 </style>
