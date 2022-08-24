@@ -7,14 +7,19 @@
         <nav class="d-flex">
           <ul class="d-flex">
             <li v-for="link in links" :key="link.id"
-            class="me-5 fw-semibold">
+            class="ms-5 fw-semibold">
             <a 
             :href="link.url"
             >{{link.text}} <i class="fa-solid fa-angle-down"></i>
             </a>
             </li>
           </ul>
-
+          <a class="ms-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="ms-2" href="#"><i class="fa-regular fa-circle-user"></i></a>
+          <div class="ms-2 p-2 d-flex align-items-center position-relative" id="search-bar">
+            <input class="form-control" type="text" placeholder="Search..." v-model.trim="searchString">
+            <a class="position-absolute end-0 pe-4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
         </nav>
       </header>
 
@@ -51,6 +56,9 @@ props: {
     line-height: 100px;
     #logo {
       width: 150px;
+    }
+    a i {
+      color: $titles;
     }
     ul {
       list-style-type: none;
