@@ -3,9 +3,22 @@
     <HeaderItem :links="headerMenu" />
     <main>
       <section id="careers-section">
-        <div class="text-center">
+        <div class="text-center mb-5 generic-title">
           <p>START LEARNING CODING LANGUAGE</p>
           <h1><strong>Build Your Dream </strong><span>TODAY</span></h1>
+        </div>
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+              <div 
+                v-for="card in careersCards" :key="card.id"
+                class="text-center mb-5 col-3"
+                >
+                  <img class="mb-4" :src="card.url" :alt="card.title">
+                  <h5 class="mb-3 fw-bold">{{ card.title }}</h5>
+                  <p class="mb-4">{{ card.text }}</p>
+                  <a class="fw-bold" href="#">Start now <i class="ms-2 fa-solid fa-arrow-right-long"></i></a>
+                </div>
+          </div>
         </div>
       </section>
     </main>
@@ -15,9 +28,10 @@
 <script>
 import HeaderItem from './components/HeaderItem.vue';
 
+
 export default {
   name: "App",
-  components: { HeaderItem },
+  components: { HeaderItem, },
   data() {
     return {
       headerMenu:[
@@ -28,6 +42,31 @@ export default {
         {id:5, url:'#', text:'Blog'},
         {id:6, url:'#', text:'Shop'},
         ],
+      careersCards:[
+        {id:1,
+        title: 'Idea Discussion',
+        url: require('./assets/img/home-5-image-box-01.png'),
+        text: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
+        },
+        {
+          id:2,
+          title: 'Web Development',
+          url: require('./assets/img/home-5-image-box-02.png'),
+          text: 'Learn to start building a webpage from scratch. You decide your own pace, course and speed.',
+        },
+        {
+          id:3,
+          title: 'Web Development',
+          url: require('./assets/img/home-5-image-box-03.png'),
+          text: 'Learners are encouraged to study the mechanism and structure of system administration.',
+        },
+        {
+          id:4,
+          title: 'Graphic Design',
+          url: require('./assets/img/home-5-image-box-04.png'),
+          text: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
+        },
+      ]
     }
   },
 }
@@ -35,13 +74,15 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/style.scss';
-h1 {
-  color: $mulled_wine;
-  span {
-    color: $jungle_green;
-  }
-};
-p {
-  color: $oslo_gray;
+.generic-title {
+  h1 {
+    color: $mulled_wine;
+    span {
+      color: $jungle_green;
+    }
+  };
+  p {
+    color: $oslo_gray;
+  };
 }
 </style>

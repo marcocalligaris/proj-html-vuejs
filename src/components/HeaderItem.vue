@@ -23,7 +23,7 @@
           <a class="ms-3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <a class="ms-3" href="#"><i class="fa-regular fa-circle-user"></i></a>
           <div class="ms-3 d-flex align-items-center position-relative" id="search-bar">
-            <input class="form-control" type="text" placeholder="Search..." v-model.trim="searchString">
+            <input class="form-control" type="text" placeholder="Search...">
             <a class="position-absolute end-0 pe-4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </nav>
