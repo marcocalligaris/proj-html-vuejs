@@ -2,13 +2,14 @@
   <div>
     <HeaderItem :links="headerMenu" />
     <main>
+      <!-- Sezione carriere -->
       <section id="careers-section">
         <div class="text-center mb-5 generic-title">
           <p>START LEARNING CODING LANGUAGE</p>
           <h1><strong>Build Your Dream </strong><span>TODAY</span></h1>
         </div>
-        <div class="container">
-          <div class="row d-flex justify-content-between">
+        <div class="container py-5">
+          <div class="row mb-5 d-flex justify-content-between" id="careers-gallery">
               <div 
                 v-for="card in careersCards" :key="card.id"
                 class="text-center mb-5 col-3"
@@ -18,6 +19,12 @@
                   <p class="mb-4">{{ card.text }}</p>
                   <a class="fw-bold" href="#">Start now <i class="ms-2 fa-solid fa-arrow-right-long"></i></a>
                 </div>
+          </div>
+          <div class="row d-flex justify-content-between position-relative" id="about-us">
+            <div class="col-6 text-end mb-3" id="careers-img">
+                <img src="./assets/img/about-us-03-image-01.png" alt="About us">
+            </div>
+            <div class="col-6"></div>
           </div>
         </div>
       </section>
@@ -66,7 +73,7 @@ export default {
           url: require('./assets/img/home-5-image-box-04.png'),
           text: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
         },
-      ]
+      ],
     }
   },
 }
@@ -84,5 +91,18 @@ export default {
   p {
     color: $oslo_gray;
   };
+};
+#careers-gallery {
+  a {
+    color: $oslo_gray;
+  }
+};
+#careers-img {
+  position: absolute;
+  left: -150px;
+  background-image: url('./assets/img/underlay-shape-lilla.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 80px 120px;
 }
 </style>
