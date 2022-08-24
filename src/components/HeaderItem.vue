@@ -1,6 +1,6 @@
 <template>
-  <div id="jumbotron">
-    <div class="bg-white rounded-start p-2 d-flex flex-column align-items-center position-absolute end-0" id="side-menu">
+  <div id="jumbotron" class="mb-5">
+    <div class="rounded-start p-2 d-flex flex-column align-items-center position-absolute end-0" id="side-menu">
       <a href="#"><i class="fa-solid fa-bars mb-2"></i></a>
       <a href="#"><i class="fa-solid fa-life-ring mb-2"></i></a>
       <a href="#"><i class="fa-solid fa-book mb-2"></i></a>
@@ -70,10 +70,11 @@ export default {
     transform: rotateX(180deg);
   };
   a {
-    color: $titles;
+    color: $mulled_wine;
   };
   #side-menu {
     top: 180px;
+    background-color: $white;
   };
   header {
     height: 100px;
@@ -91,12 +92,12 @@ export default {
   };
   .col-4 {
     h1 {
-      color: $titles;
+      color: $mulled_wine;
       font-weight: bold;
       margin-bottom: 1rem;
     }
     p {
-      color: $text;
+      color: $oslo_gray;
       margin-bottom: 2rem;
     }
     .btn {
