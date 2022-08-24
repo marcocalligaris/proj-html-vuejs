@@ -98,7 +98,7 @@ export default {
         },
         {
           id:3,
-          title: 'Web Development',
+          title: 'System Administration',
           url: require('./assets/img/home-5-image-box-03.png'),
           text: 'Learners are encouraged to study the mechanism and structure of system administration.',
         },
@@ -182,7 +182,7 @@ export default {
           lessons: '14',
           students: '76',
         },
-      ]
+      ],
     }
   },
 }
