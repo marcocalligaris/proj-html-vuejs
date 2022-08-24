@@ -5,7 +5,7 @@
       <header class="py-3 d-flex justify-content-between align-items-center">
         <a href="#"><img id="logo" src="../assets/img/dark-logo.png" alt="Max Coach"></a>
         <nav class="d-flex">
-          <ul class="d-flex">
+          <ul class="d-flex align-items-center">
             <li v-for="link in links" :key="link.id"
             class="ms-5 fw-semibold">
             <a 
@@ -14,9 +14,9 @@
             </a>
             </li>
           </ul>
-          <a class="ms-2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-          <a class="ms-2" href="#"><i class="fa-regular fa-circle-user"></i></a>
-          <div class="ms-2 p-2 d-flex align-items-center position-relative" id="search-bar">
+          <a class="ms-3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a class="ms-3" href="#"><i class="fa-regular fa-circle-user"></i></a>
+          <div class="ms-3 d-flex align-items-center position-relative" id="search-bar">
             <input class="form-control" type="text" placeholder="Search..." v-model.trim="searchString">
             <a class="position-absolute end-0 pe-4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
@@ -53,19 +53,23 @@ props: {
   };
   header {
     height: 100px;
-    line-height: 100px;
     #logo {
       width: 150px;
-    }
-    a i {
-      color: $titles;
-    }
-    ul {
-      list-style-type: none;
-      a {
+    };
+    nav {
+      height: 100px;
+      line-height: 100px;
+      a i {
         color: $titles;
-      }
-    }
-  }
+      };
+      ul {
+        list-style-type: none;
+        height: 100px;
+        a {
+          color: $titles;
+        }
+      };
+    };
+  };
 }
 </style>
