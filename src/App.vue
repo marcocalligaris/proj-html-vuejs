@@ -20,12 +20,7 @@
                   <a class="fw-bold" href="#">Start now <i class="ms-2 fa-solid fa-arrow-right-long"></i></a>
                 </div>
           </div>
-          <div class="row d-flex justify-content-between position-relative" id="about-us">
-            <div class="col-6 text-end mb-3" id="careers-img">
-                <img src="./assets/img/about-us-03-image-01.png" alt="About us">
-            </div>
-            <div class="col-6"></div>
-          </div>
+          <AboutItem />
         </div>
       </section>
     </main>
@@ -34,11 +29,12 @@
 
 <script>
 import HeaderItem from './components/HeaderItem.vue';
+import AboutItem from './components/AboutItem.vue';
 
 
 export default {
   name: "App",
-  components: { HeaderItem, },
+  components: { HeaderItem, AboutItem },
   data() {
     return {
       headerMenu:[
@@ -97,12 +93,4 @@ export default {
     color: $oslo_gray;
   }
 };
-#careers-img {
-  position: absolute;
-  left: -150px;
-  background-image: url('./assets/img/underlay-shape-lilla.svg');
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: 80px 120px;
-}
 </style>
