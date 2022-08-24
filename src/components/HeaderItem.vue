@@ -1,8 +1,14 @@
 <template>
   <div id="jumbotron">
+    <div class="bg-white rounded-start p-2 d-flex flex-column align-items-center position-absolute end-0" id="side-menu">
+      <a href="#"><i class="fa-solid fa-bars mb-2"></i></a>
+      <a href="#"><i class="fa-solid fa-life-ring mb-2"></i></a>
+      <a href="#"><i class="fa-solid fa-book mb-2"></i></a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
     <!-- Intestazione con menu di navigazione -->
     <div class="container">
-      <header class="py-3 d-flex justify-content-between align-items-center">
+      <header class=" mb-5 py-3 d-flex justify-content-between align-items-center">
         <a href="#"><img id="logo" src="../assets/img/dark-logo.png" alt="Max Coach"></a>
         <nav class="d-flex">
           <ul class="d-flex align-items-center">
@@ -22,17 +28,30 @@
           </div>
         </nav>
       </header>
-
+      <div class="row pb-5 d-flex justify-content-between">
+        <div class="col-4 d-flex align-items-center">
+          <div>
+            <h1>Complete Your Dreams in JavaS Programming</h1>
+            <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
+            <button type="button" class="btn fw-semibold py-2 px-4">
+              <i class="fa-solid fa-download"></i> Download Free E-Book
+            </button>
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <img id="schooling" src="../assets/img/home-5-hero-image.png" alt="Home schooling">
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-name: 'HeaderItem',
-props: {
-  links: Array,
-  },
+    name: "HeaderItem",
+    props: {
+        links: Array,
+    },
 }
 </script>
 
@@ -40,7 +59,6 @@ props: {
 @import '../assets/scss/style.scss';
 #jumbotron {
   position: relative;
-  overflow: hidden;
   background-color: $jumbotron;
   &::before {
     content: "";
@@ -51,6 +69,12 @@ props: {
     background-image: url('../assets/img/jumbo-overlay.svg');
     transform: rotateX(180deg);
   };
+  a {
+    color: $titles;
+  };
+  #side-menu {
+    top: 180px;
+  };
   header {
     height: 100px;
     #logo {
@@ -59,17 +83,26 @@ props: {
     nav {
       height: 100px;
       line-height: 100px;
-      a i {
-        color: $titles;
-      };
       ul {
         list-style-type: none;
         height: 100px;
-        a {
-          color: $titles;
-        }
       };
     };
   };
+  .col-4 {
+    h1 {
+      color: $titles;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $text;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: $jungle_green;
+      color: white;
+    }
+  }
 }
 </style>
