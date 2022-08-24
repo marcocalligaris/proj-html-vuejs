@@ -1,5 +1,5 @@
 <template>
-  <div class="row d-flex justify-content-between mb-5" id="about-us">
+  <div class="row d-flex justify-content-between" id="about-us">
             <div class="col-6 mb-3">
               <div id="careers-img" class="position-relative text-end">
                 <img src="../assets/img/about-us-03-image-01.png" alt="About us">
@@ -60,7 +60,7 @@ name: 'AboutItem',
   background-position: 80px 120px;
 };
 .card {
-  box-shadow: 0 0 50px lightgray;
+  box-shadow: 0 0 40px lightgray;
 };
 .fa-circle-plus {
   color: $oslo_gray;

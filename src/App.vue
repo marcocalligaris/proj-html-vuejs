@@ -22,6 +22,16 @@
           </div>
           <AboutItem />
         </div>
+        <div id="statistics" class="mb-5">
+          <div class="container py-5">
+            <ul class="d-flex justify-content-between">
+              <li class="text-center" v-for="item in statistics" :key="item.id">
+                <p class="fs-1 fw-bold">{{ item.text }}</p>
+                <span class="fw-semibold">{{ item.description }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </div>
@@ -30,8 +40,6 @@
 <script>
 import HeaderItem from './components/HeaderItem.vue';
 import AboutItem from './components/AboutItem.vue';
-
-
 export default {
   name: "App",
   components: { HeaderItem, AboutItem },
@@ -70,6 +78,12 @@ export default {
           text: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.',
         },
       ],
+      statistics:[
+        {id:1, text: '1.926', description: 'FINISHED SESSIONS'},
+        {id:2, text: '3.092+', description: 'ENROLLED LEARNERS'},
+        {id:3, text: '200', description: 'ONLINE INSTRUCTORS'},
+        {id:4, text: '100%', description: 'SATISFACTION RATE'},
+      ]
     }
   },
 }
@@ -77,6 +91,9 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/style.scss';
+ul {
+  list-style-type: none;
+}
 .generic-title {
   h1 {
     color: $mulled_wine;
@@ -93,4 +110,10 @@ export default {
     color: $oslo_gray;
   }
 };
+#statistics {
+  background-color: $gallery;
+  p.fs-1 {
+    color: $jungle_green;
+  }
+}
 </style>
