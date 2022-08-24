@@ -33,21 +33,40 @@
           </div>
         </div>
       </section>
-      <section id="courses-section">
+      <section id="courses-section" class="pb-5 mb-5">
         <div class="text-center mb-5 generic-title">
           <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
           <h1><strong>Last Featured </strong><span>Courses</span></h1>
         </div>
         <div class="container">
-          <div class="row d-flex flex-wrap">
-
+          <div class="row g-5 d-flex justify-content-between mb-5">
+            <div v-for="item in courses" :key="item.id" class="col-4">
+              <div class="card border-0">
+                <div class="position-relative">
+                  <div id="course-price" class="text-center py-2 px-3">
+                    <span class="text-white fw-bold">{{ item.price }}</span>
+                  </div>
+                  <img :src="item.url" class="card-img-top" :alt="item.title">
+                </div>
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-2">
+                    <img class="rounded-circle me-2" :src="item.photo" :alt="item.teacher">
+                    <span>{{ item.teacher }}</span>
+                  </div>
+                  <h5 class="card-title fw-bold">{{ item.text }}</h5>
+                </div>
+                <div class="card-body">
+                  <span class="me-5"><i class="fa-regular fa-file-lines me-2"></i>{{ item.lessons }} Lessons</span>
+                  <span><i class="fa-regular fa-user me-2"></i>{{ item.students }} Students</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
   </div>
 </template>
-
 <script>
 import HeaderItem from './components/HeaderItem.vue';
 import AboutItem from './components/AboutItem.vue';
@@ -65,10 +84,11 @@ export default {
         {id:6, url:'#', text:'Shop'},
         ],
       careersCards:[
-        {id:1,
-        title: 'Idea Discussion',
-        url: require('./assets/img/home-5-image-box-01.png'),
-        text: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
+        {
+          id:1,
+          title: 'Idea Discussion',
+          url: require('./assets/img/home-5-image-box-01.png'),
+          text: 'Get teamed up with the specialists who work and teach coding for years at famous universities.',
         },
         {
           id:2,
@@ -94,6 +114,74 @@ export default {
         {id:2, text: '3.092+', description: 'ENROLLED LEARNERS'},
         {id:3, text: '200', description: 'ONLINE INSTRUCTORS'},
         {id:4, text: '100%', description: 'SATISFACTION RATE'},
+      ],
+      courses: [
+        {
+          id: 1,
+          title: 'Learning to write',
+          text: 'Learning to Write as a Professional Author',
+          price: '$40.00',
+          teacher: 'Blanche Fields',
+          photo: require('./assets/img/blanche-2.jpeg'),
+          url: require('./assets/img/course-01.jpg'),
+          lessons: '20',
+          students: '50',
+        },
+        {
+          id: 2,
+          title: 'Info-Tech Strategies',
+          text: 'Customer-centric Info-Tech Strategies',
+          price: 'Free',
+          teacher: 'Maggie Strickland',
+          photo: require('./assets/img/maggie-2.jpeg'),
+          url: require('./assets/img/course-02.jpg'),
+          lessons: '24',
+          students: '769',
+        },
+        {
+          id: 3,
+          title: 'Python',
+          text: 'Open Programming Courses for Everyone: Python',
+          price: '$19.00',
+          teacher: 'Maggie Strickland',
+          photo: require('./assets/img/maggie-2.jpeg'),
+          url: require('./assets/img/course-03.jpg'),
+          lessons: '17',
+          students: '62',
+        },
+        {
+          id: 4,
+          title: 'Academic listening',
+          text:'Academic Listening and Note-taking',
+          price: '$26.00',
+          teacher: 'Blanche Fields',
+          photo: require('./assets/img/blanche-2.jpeg'),
+          url: require('./assets/img/course-04.jpg'),
+          lessons: '14',
+          students: '67',
+        },
+        {
+          id: 5,
+          title: 'Master jQuery',
+          text:'Master jQuery in a Short Period of Time',
+          price: '$39.00',
+          teacher: 'Blanche Fields',
+          photo: require('./assets/img/blanche-2.jpeg'),
+          url: require('./assets/img/course-05.jpg'),
+          lessons: '6',
+          students: '51',
+        },
+                {
+          id: 6,
+          title: 'Javascript',
+          text:'Introduction to Javascript for Beginners',
+          price: '$59.00',
+          teacher: 'Blanche Fields',
+          photo: require('./assets/img/blanche-2.jpeg'),
+          url: require('./assets/img/course-06.jpg'),
+          lessons: '14',
+          students: '76',
+        },
       ]
     }
   },
@@ -128,7 +216,16 @@ ul {
   };
 };
 #courses-section {
-  height: 900px;
-  background-image: linear-gradient(white, lightgray);
+  background-image: linear-gradient(white, $gallery);
+  span {
+    color: gray;
+  };
+  #course-price {
+    position: absolute;
+    right: 0;
+    background-color: $green_haze;
+    width: 100px;
+    border-radius: 0 5px 0 5px;
+  };
 };
 </style>
