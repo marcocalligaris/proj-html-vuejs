@@ -241,7 +241,7 @@
         </div>
         <p class="text-secondary text-center mb-5"><i class="me-2 fa-regular fa-copyright"></i>2020 Maxcoach. All Rights Reserved</p>
       </div>
-      <div id="top-arrow"><a href="#page-start"><i class=" text-white fa-solid fa-arrow-up-long"></i></a></div>
+      <div><a id="top-arrow" href="#page-start"><i class=" text-white fa-solid fa-arrow-up-long"></i></a></div>
     </footer>
   </div>
 </template>
