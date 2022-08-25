@@ -618,6 +618,9 @@ footer {
     position: absolute;
     right: 20px;
     bottom: 5px;
+    &:hover {
+    background-color: $mulled_wine;
+  }
   }
 }
 </style>

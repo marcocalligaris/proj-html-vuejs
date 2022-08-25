@@ -33,8 +33,7 @@
           <div>
             <h1>Complete Your Dreams in JavaS Programming</h1>
             <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
-            <button type="button" class="btn fw-semibold py-2 px-4">
-              <i class="fa-solid fa-download"></i> Download Free E-Book</button>
+            <button type="button" class="btn fw-semibold py-2 px-4"><i class="fa-solid fa-download"></i> Download Free E-Book</button>
           </div>
         </div>
         <div class="col-6 text-end">
@@ -61,6 +60,7 @@ export default {
   color: white;
   &:hover {
     background-color: $mulled_wine;
+    color: white;
     cursor: pointer;
   }
 }
