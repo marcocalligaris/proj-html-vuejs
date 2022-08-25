@@ -71,7 +71,7 @@
       </section>
       <section id="learning-options">
         <div class="container pt-5">
-          <div class="row d-flex">
+          <div class="row d-flex mb-5">
             <div class="col-4">
               <div class="mb-5 generic-title w-75">
                 <p>WHY HESITATE TO REGISTER?</p>
@@ -94,7 +94,23 @@
               </div>
             </div>
           </div>
-          
+          <div class="row pt-5">
+            <div class="col-6">
+              <div id="mobile-learning">
+                <img src="./assets/img/home-5-image-02.png" alt="Mobile learning">
+              </div>
+            </div>
+            <div class="col-5 d-flex align-items-center">
+              <div>
+                <div class="mb-4 generic-title">
+                  <p>WHAT ARE YOU LOOKING FOR?</p>
+                  <h1><strong>Learn on your </strong><span>mobile </span><strong>anytime!</strong></h1>
+                </div>
+                <p class="mb-5">Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or other precious moments.</p>
+                <button type="button" class="btn fw-bold py-2 px-4 mb-5">Download Our App</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -292,15 +308,20 @@ ul {
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 400px;
-
     #img-left {
       left: 100px;
       object-fit: contain;
-    }
+    };
     #img-right {
       right: 150px;
       bottom: 90px;
-    }
+    };
+  };
+  #mobile-learning {
+    background-image: url('./assets/img/underlay-shape-grey.svg'), url('./assets/img/maxcoach-shape-07.png'), url('./assets/img/orange-circle.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, 400px 300px, 520px 50px;
+    background-size: 400px, auto, 50px;
   }
 };
 </style>
