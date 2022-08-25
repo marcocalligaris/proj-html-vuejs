@@ -205,10 +205,10 @@
               </div>
             </address>
             <ul class="d-flex">
-              <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
-              <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
-              <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-              <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
+              <li class="me-4"><a href="#"><i class="fa-brands fa-facebook text-secondary"></i></a></li>
+              <li class="me-4"><a href="#"><i class="fa-brands fa-twitter text-secondary"></i></a></li>
+              <li class="me-4"><a href="#"><i class="fa-brands fa-instagram text-secondary"></i></a></li>
+              <li class="me-4"><a href="#"><i class="fa-brands fa-linkedin text-secondary"></i></a></li>
             </ul>
           </div>
           <div class="col-6 d-flex">
