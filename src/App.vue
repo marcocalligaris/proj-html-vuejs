@@ -41,7 +41,9 @@
         </div>
         <div class="container">
           <div class="row g-5 d-flex justify-content-between mb-5">
-            <div v-for="item in courses" :key="item.id" class="col-4">
+            <div 
+            v-for="item in courses" :key="item.id" 
+            class="col-4">
               <div id="course-card" class="card border-0">
                 <div class="position-relative">
                   <div id="course-price" class="text-center py-2 px-3">
@@ -120,9 +122,26 @@
         <!-- Sezione eventi -->
         <div class="container">
           <div class="text-center mb-5 generic-title">
-          <p>GET IN CONTACT NOW</p>
-          <h1><strong>Upcoming </strong><span>Events</span></h1>
-        </div>
+            <p>GET IN CONTACT NOW</p>
+            <h1><strong>Upcoming </strong><span>Events</span></h1>
+          </div>
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div 
+            v-for="item in events" :key="item.id"
+            class="col-6 p-3">
+              <div class="p-4 bg-light d-flex justify-content-between">
+                <div>
+                  <p class="text-secondary"><i class="fa-solid fa-location-dot me-2"></i>{{ item.location }}</p>
+                  <h5 class="fw-bold">{{ item.title}}</h5>
+                </div>
+                <div class="text-center w-25">
+                  <span class="fs-1">{{ item.day }}</span>
+                  <p class="fw-bold">{{ item.month }}</p>
+                  <button type="button" class="btn fw-bold py-2 px-4">Get ticket</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -244,6 +263,50 @@ export default {
           students: '76',
         },
       ],
+      events:[
+        {
+          id: 1,
+          location: 'Texas, US',
+          title: 'Storytelling Workshop',
+          day: '22',
+          month: 'NOV',
+        },
+        {
+          id: 2,
+          location: 'New York, US',
+          title: 'Painting Art Contest 2020',
+          day: '10',
+          month: 'OCT',
+        },
+        {
+          id: 3,
+          location: 'Hamburg, Germany',
+          title: 'International Art Fair 2020',
+          day: '23',
+          month: 'NOV',
+        },
+        {
+          id: 4,
+          location: 'Illinois, US',
+          title: 'Street Performance: Call for Artist',
+          day: '15',
+          month: 'DEC',
+        },
+        {
+          id: 5,
+          location: 'Illinois, US',
+          title: 'Consumer Food Safety Education Conference',
+          day: '22',
+          month: 'JUL',
+        },
+        {
+          id: 6,
+          location: 'Dubai',
+          title: 'How meditation improve your mental health?',
+          day: '12',
+          month: 'AUG',
+        },
+      ]
     }
   },
 }
@@ -340,7 +403,12 @@ ul {
     };
     #max-square {
       left: -75%;
-    }
-  }
+    };
+  };
 };
+#events {
+  span {
+    color: $jungle_green;
+  }
+}
 </style>
