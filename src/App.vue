@@ -34,6 +34,7 @@
         </div>
       </section>
       <section id="courses-section" class="pb-5 mb-5">
+        <!-- Sezione corsi -->
         <div class="text-center mb-5 generic-title">
           <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
           <h1><strong>Last Featured </strong><span>Courses</span></h1>
@@ -69,8 +70,9 @@
           </div>
         </div>
       </section>
-      <section id="learning-options">
-        <div class="container pt-5">
+      <section id="learning-options" class="mb-5">
+        <!-- Sezione apprendimento -->
+        <div class="container py-5">
           <div class="row d-flex mb-5">
             <div class="col-4">
               <div class="mb-5 generic-title w-75">
@@ -112,6 +114,15 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="events">
+        <!-- Sezione eventi -->
+        <div class="container">
+          <div class="text-center mb-5 generic-title">
+          <p>GET IN CONTACT NOW</p>
+          <h1><strong>Upcoming </strong><span>Events</span></h1>
+        </div>
         </div>
       </section>
     </main>
