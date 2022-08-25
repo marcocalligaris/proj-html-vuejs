@@ -62,6 +62,39 @@
               </div>
             </div>
           </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn fw-bold py-2 px-4 mb-5">
+                View all courses <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="learning-options">
+        <div class="container pt-5">
+          <div class="row d-flex">
+            <div class="col-4">
+              <div class="mb-5 generic-title w-75">
+                <p>WHY HESITATE TO REGISTER?</p>
+                <h1><strong>Learn At Your Own </strong><span>Pace</span></h1>
+              </div>
+              <ul class="mb-5">
+                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Select & customize courses to your preferences</li>
+                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Change the tutor and make arrangements</li>
+                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Participate in events to join others</li>
+                <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Get the desired certificate delivered at house</li>
+              </ul>
+              <button type="button" class="btn fw-bold py-2 px-4 mb-5">Get started for free</button>
+            </div>
+            <div class="col-7">
+              <div id="laptop-learning">
+                <img class="position-relative" id="img-left" src="./assets/img/home-5-image-01.png" alt="Laptop learning">
+                <div class="position-relative">
+                  <img class="position-absolute" id="img-right" src="./assets/img/maxcoach-shape-05.png" alt="Maxcoach shape">
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
     </main>
@@ -192,6 +225,9 @@ export default {
 @import './assets/scss/style.scss';
 ul {
   list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 .generic-title {
   h1 {
@@ -203,6 +239,16 @@ ul {
   p {
     color: $oslo_gray;
   };
+};
+.btn {
+  font-size: 12px;
+  background-color: $jungle_green;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    background-color: $mulled_wine;
+    color: white;
+  }
 };
 #careers-gallery {
   a {
@@ -217,6 +263,7 @@ ul {
 };
 #courses-section {
   background-image: linear-gradient(white, $gallery);
+  clip-path: ellipse(140% 100% at 50% 0%);
   #course-card {
     background-color: transparent;
     &:hover {
@@ -234,6 +281,26 @@ ul {
       width: 100px;
       border-radius: 0 5px 0 5px;
     };
+  };
+};
+#learning-options {
+  li {
+    font-size: 12px;
+  }
+  #laptop-learning {
+    background-image: url('./assets/img/underlay-shape-grey.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 400px;
+
+    #img-left {
+      left: 100px;
+      object-fit: contain;
+    }
+    #img-right {
+      right: 150px;
+      bottom: 90px;
+    }
   }
 };
 </style>

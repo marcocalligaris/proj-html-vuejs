@@ -34,8 +34,7 @@
             <h1>Complete Your Dreams in JavaS Programming</h1>
             <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
             <button type="button" class="btn fw-semibold py-2 px-4">
-              <i class="fa-solid fa-download"></i> Download Free E-Book
-            </button>
+              <i class="fa-solid fa-download"></i> Download Free E-Book</button>
           </div>
         </div>
         <div class="col-6 text-end">
@@ -57,6 +56,14 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/style.scss';
+.btn {
+  background-color: $jungle_green;
+  color: white;
+  &:hover {
+    background-color: $mulled_wine;
+    cursor: pointer;
+  }
+}
 #jumbotron {
   position: relative;
   background-color: $jumbotron;
@@ -99,10 +106,6 @@ export default {
     p {
       color: $oslo_gray;
       margin-bottom: 2rem;
-    }
-    .btn {
-      background-color: $jungle_green;
-      color: white;
     }
   }
 }
