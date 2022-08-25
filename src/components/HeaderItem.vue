@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/scss/style.scss';
 .btn {
-  background-color: $jungle_green;
+  background-color: $custom_blue;
   color: white;
   &:hover {
     background-color: $mulled_wine;

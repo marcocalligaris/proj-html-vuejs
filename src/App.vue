@@ -211,7 +211,9 @@
               <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6">
+
+          </div>
         </div>
       </div>
     </footer>
@@ -442,7 +444,7 @@ ul {
 #statistics {
   background-color: $gallery;
   p.fs-1 {
-    color: $jungle_green;
+    color: $custom_blue;
   };
 };
 #courses-section {
@@ -461,7 +463,7 @@ ul {
     #course-price {
       position: absolute;
       right: 0;
-      background-color: $jungle_green;
+      background-color: $custom_blue;
       width: 100px;
       border-radius: 0 5px 0 5px;
     };

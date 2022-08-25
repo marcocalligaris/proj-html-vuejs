@@ -45,7 +45,7 @@ name: 'AboutItem',
   h1 {
     color: $mulled_wine;
     span {
-      color: $jungle_green;
+      color: $custom_blue;
     }
   };
   p {
@@ -66,7 +66,7 @@ name: 'AboutItem',
   color: $oslo_gray;
 };
 #card-title {
-  background-color: $jungle_green;
+  background-color: $custom_blue;
   border-radius: 5px 5px 0 0;
   color: $white;
   a {
