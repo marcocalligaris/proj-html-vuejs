@@ -33,8 +33,8 @@
           </div>
         </div>
       </section>
-      <section id="courses-section" class="pb-5 mb-5">
         <!-- Sezione corsi -->
+      <section id="courses-section" class="pb-5 mb-5">
         <div class="text-center mb-5 generic-title">
           <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
           <h1><strong>Last Featured </strong><span>Courses</span></h1>
@@ -72,8 +72,8 @@
           </div>
         </div>
       </section>
-      <section id="learning-options" class="mb-5">
         <!-- Sezione apprendimento -->
+      <section id="learning-options" class="mb-5">
         <div class="container py-5">
           <div class="row d-flex mb-5">
             <div class="col-4">
@@ -118,8 +118,8 @@
           </div>
         </div>
       </section>
-      <section id="events">
         <!-- Sezione eventi -->
+      <section id="events" class="mb-5">
         <div class="container">
           <div class="text-center mb-5 generic-title">
             <p>GET IN CONTACT NOW</p>
@@ -145,6 +145,28 @@
           <div class="d-flex justify-content-center">
             <p class="text-secondary">Excited about our event? <span id="events-link">View all events <i class="fa-solid fa-arrow-right-long"></i></span> </p>
           </div>
+        </div>
+      </section>
+      <!-- Sezione Feedback -->
+      <section id="feedbacks" class="pt-5 mb-5">
+        <div class="text-center pt-5 mb-5 generic-title">
+          <p>PEOPLE ARE PRAISING MAXCOACH</p>
+          <h1><strong>What make they </strong><span>love us?</span></h1>
+        </div>
+        <div class="container py-5">
+          <div class="row pt-5 mb-4">
+            <div 
+            v-for="item in feedbacks" :key="item.id"
+            class="col-4 p-3">
+              <div class="bg-white rounded text-center" id="testimonial-card">
+                <img :src="item.url" :alt="item.job">
+                <p id="user-feedback" class="fw-semibold mb-4">{{ item.text }}</p>
+                <p class="fw-bold">{{ item.name }}</p>
+                <P class="text-secondary">/ {{ item.job }}</P>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
     </main>
@@ -309,7 +331,30 @@ export default {
           day: '12',
           month: 'AUG',
         },
-      ]
+      ],
+      feedbacks:[
+        {
+          id: 1,
+          url: require('./assets/img/testimonial-avata-02.jpg'),
+          text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
+          name: 'MINA HOLLACE',
+          job: 'Freelancer',
+        },
+        {
+          id: 2,
+          url: require('./assets/img/testimonial-avata-04.jpg'),
+          text: 'MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+          name: 'MADLEY PONDOR',
+          job: 'IT Specialist',
+        },
+        {
+          id: 3,
+          url: require('./assets/img/testimonial-avata-01.jpg'),
+          text: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.',
+          name: 'LUVIC DUBBLE',
+          job: 'Private Tutor',
+        },
+      ],
     }
   },
 }
@@ -410,14 +455,32 @@ ul {
   };
 };
 #events {
+  padding-bottom: 100px;
   span {
     color: $custom_blue;
-  }
+  };
   #events-link {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: lightgray;
     font-weight: bold;
+  };
+};
+#feedbacks {
+  background-color: $gallery;
+  #testimonial-card {
+    padding: 0 25px 25px 25px;
+    box-shadow: 0 0 30px lightgray;
+    img {
+      width: 150px;
+      border-radius: 50%;
+      position: relative;
+      top: -50%;
+      transform: translateY(-50%);
+    };
+    #user-feedback {
+      color: $mulled_wine;
+    }
   }
 }
 </style>
