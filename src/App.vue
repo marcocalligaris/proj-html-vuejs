@@ -87,17 +87,18 @@
             </div>
             <div class="col-7">
               <div id="laptop-learning">
-                <img class="position-relative" id="img-left" src="./assets/img/home-5-image-01.png" alt="Laptop learning">
+                <img class="position-relative" id="laptop" src="./assets/img/home-5-image-01.png" alt="Laptop learning">
                 <div class="position-relative">
-                  <img class="position-absolute" id="img-right" src="./assets/img/maxcoach-shape-05.png" alt="Maxcoach shape">
+                  <img class="position-absolute" id="max-circle" src="./assets/img/maxcoach-shape-05.png" alt="Maxcoach shape">
                 </div>
               </div>
             </div>
           </div>
           <div class="row pt-5">
             <div class="col-6">
-              <div id="mobile-learning">
-                <img src="./assets/img/home-5-image-02.png" alt="Mobile learning">
+              <div id="mobile-learning" class="position-relative">
+                <img id="mobile" class="position-relative" src="./assets/img/home-5-image-02.png" alt="Mobile learning">
+                <img id="max-square" class="position-relative" src="./assets/img/maxcoach-shape-01.png" alt="Maxcoach shape">
               </div>
             </div>
             <div class="col-5 d-flex align-items-center">
@@ -308,11 +309,11 @@ ul {
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 400px;
-    #img-left {
+    #laptop {
       left: 100px;
       object-fit: contain;
     };
-    #img-right {
+    #max-circle {
       right: 150px;
       bottom: 90px;
     };
@@ -320,8 +321,15 @@ ul {
   #mobile-learning {
     background-image: url('./assets/img/underlay-shape-grey.svg'), url('./assets/img/maxcoach-shape-07.png'), url('./assets/img/orange-circle.png');
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left bottom, 400px 300px, 520px 50px;
+    background-position: left bottom, 400px 300px, 520px 30px;
     background-size: 400px, auto, 50px;
+    #mobile {
+      bottom: 30px;
+      left: 100px;
+    };
+    #max-square {
+      left: -75%;
+    }
   }
 };
 </style>
