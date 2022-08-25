@@ -192,9 +192,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="position-relative">
       <div class="container">
-        <div class="row">
+        <div class="row pb-5">
           <div class="col-6">
             <address class="mb-5">
               <h5 class="fw-bold mb-3">Address</h5>
@@ -211,11 +211,37 @@
               <li class="me-4 text-secondary"><a href="#"></a><i class="fa-brands fa-linkedin"></i></li>
             </ul>
           </div>
-          <div class="col-6">
-
+          <div class="col-6 d-flex">
+            <div class="col-4">
+              <h5 class="fw-bold mb-3">Explore</h5>
+              <ul class="text-secondary">
+                <li class="mb-3"><a href="#">Start here</a></li>
+                <li class="mb-3"><a href="#">Blog</a></li>
+                <li class="mb-3"><a href="#">About us</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5 class="fw-bold mb-3 text-white">EMPTY</h5>
+              <ul class="text-secondary">
+                <li class="mb-3"><a href="#">Success story</a></li>
+                <li class="mb-3"><a href="#">Courses</a></li>
+                <li class="mb-3"><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5 class="fw-bold mb-3">Information</h5>
+              <ul class="text-secondary">
+                <li class="mb-3"><a href="#">Membership</a></li>
+                <li class="mb-3"><a href="#">Purchase guide</a></li>
+                <li class="mb-3"><a href="#">Privacy policy</a></li>
+                <li class="mb-3"><a href="#">Terms of services</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+        <p class="text-secondary text-center"><i class="me-2 fa-regular fa-copyright"></i>2020 Maxcoach. All Rights Reserved</p>
       </div>
+      <div id="top-arrow"></div>
     </footer>
   </div>
 </template>
@@ -572,9 +598,14 @@ ul {
     };
   };
 };
-address {
-  p {
-    font-size: 13px;
+footer {
+  address {
+    p {
+      font-size: 13px;
+    }
+  };
+  a {
+    text-decoration: none;
   }
 }
 </style>
