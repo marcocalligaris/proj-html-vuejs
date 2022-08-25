@@ -166,7 +166,29 @@
               </div>
             </div>
           </div>
-          
+          <div class="d-flex justify-content-center align-items-center mb-5">
+            <div class="dark-dot mx-2"></div>
+            <div class="gray-dot mx-2"></div>
+            <div class="gray-dot mx-2"></div>
+            <div class="gray-dot mx-2"></div>
+          </div>
+          <div id="getting-started">
+            <div class="row">
+              <div class="col-2" id="img-col-left">
+                <div class="gray-circle"></div>
+                <img src="./assets/img/maxcoach-shape-01.png" alt="Max shape">
+              </div>
+              <div class="col-8 text-center pb-5">
+                <span class="fs-4 fw-bold">Start today for getting </span>
+                <span class="fs-4" id="special-text">Online Certification</span>
+                <h2 class="fw-bold mb-4">You can be your own guiding star with our help!</h2>
+                <button type="button" class="btn fw-bold py-3 px-5">Get started now</button>
+              </div>
+              <div class="col-2" id="img-col-right">
+                <img src="./assets/img/maxcoach-shape-02.png" alt="Max shape">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -372,7 +394,7 @@ ul {
   h1 {
     color: $mulled_wine;
     span {
-      color: $jungle_green;
+      color: $custom_blue;
     }
   };
   p {
@@ -381,7 +403,7 @@ ul {
 };
 .btn {
   font-size: 12px;
-  background-color: $jungle_green;
+  background-color: $custom_blue;
   color: white;
   &:hover {
     cursor: pointer;
@@ -480,7 +502,49 @@ ul {
     };
     #user-feedback {
       color: $mulled_wine;
-    }
-  }
+    };
+  };
+  .dark-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $mulled_wine;
+  };
+  .gray-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $oslo_gray;
+  };
+  #getting-started {
+    color: $mulled_wine;
+    #special-text {
+      color: custom_blue;
+    };
+    #img-col-left {
+      position: relative;
+      .gray-circle {
+        position: absolute;
+        left: 80px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid $oslo_gray;
+      };
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+      };
+    };
+    #img-col-right {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      };
+    };
+  };
 }
 </style>
