@@ -125,11 +125,11 @@
             <p>GET IN CONTACT NOW</p>
             <h1><strong>Upcoming </strong><span>Events</span></h1>
           </div>
-          <div class="row d-flex flex-wrap justify-content-between">
+          <div class="row mb-5 d-flex justify-content-between">
             <div 
             v-for="item in events" :key="item.id"
             class="col-6 p-3">
-              <div class="p-4 bg-light d-flex justify-content-between">
+              <div class="p-4 rounded bg-light d-flex justify-content-between">
                 <div>
                   <p class="text-secondary"><i class="fa-solid fa-location-dot me-2"></i>{{ item.location }}</p>
                   <h5 class="fw-bold">{{ item.title}}</h5>
@@ -141,6 +141,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p class="text-secondary">Excited about our event? <span id="events-link">View all events <i class="fa-solid fa-arrow-right-long"></i></span> </p>
           </div>
         </div>
       </section>
@@ -408,7 +411,13 @@ ul {
 };
 #events {
   span {
-    color: $jungle_green;
+    color: $custom_blue;
+  }
+  #events-link {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+    font-weight: bold;
   }
 }
 </style>
