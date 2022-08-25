@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="page-start">
     <HeaderItem :links="headerMenu" />
     <main>
       <!-- Sezione carriere -->
@@ -239,9 +239,9 @@
             </div>
           </div>
         </div>
-        <p class="text-secondary text-center"><i class="me-2 fa-regular fa-copyright"></i>2020 Maxcoach. All Rights Reserved</p>
+        <p class="text-secondary text-center mb-5"><i class="me-2 fa-regular fa-copyright"></i>2020 Maxcoach. All Rights Reserved</p>
       </div>
-      <div id="top-arrow"></div>
+      <div id="top-arrow"><a href="#page-start"><i class=" text-white fa-solid fa-arrow-up-long"></i></a></div>
     </footer>
   </div>
 </template>
@@ -606,6 +606,18 @@ footer {
   };
   a {
     text-decoration: none;
+  };
+  #top-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $custom_blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
   }
 }
 </style>
