@@ -33,7 +33,7 @@
           <div>
             <h1>Complete Your Dreams in JavaS Programming</h1>
             <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
-            <button type="button" class="btn fw-semibold py-2 px-4" id="header-btn"><i class="fa-solid fa-download"></i> Download Free E-Book</button>
+            <a id="header-btn" class="btn btn-primary fw-semibold py-2 px-4" href="#" role="button"><i class="fa-solid fa-download"></i> Download Free E-Book</a>
           </div>
         </div>
         <div class="col-6 text-end">
