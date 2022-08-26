@@ -66,9 +66,7 @@
             </div>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn fw-bold py-2 px-4 mb-5">
-                View all courses <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
+            <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#courses-section" role="button">View all courses <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
       </section>
@@ -87,7 +85,7 @@
                 <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Participate in events to join others</li>
                 <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i>Get the desired certificate delivered at house</li>
               </ul>
-              <button type="button" class="btn fw-bold py-2 px-4 mb-5">Get started for free</button>
+              <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#learning-options" role="button">Get started for free</a>
             </div>
             <div class="col-7">
               <div id="laptop-learning">
@@ -112,7 +110,7 @@
                   <h1><strong>Learn on your </strong><span>mobile </span><strong>anytime!</strong></h1>
                 </div>
                 <p class="mb-5">Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or other precious moments.</p>
-                <button type="button" class="btn fw-bold py-2 px-4 mb-5">Download Our App</button>
+                <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#mobile-learning" role="button">Download Our App</a>
               </div>
             </div>
           </div>
@@ -137,13 +135,13 @@
                 <div class="text-center w-25">
                   <span class="fs-1">{{ item.day }}</span>
                   <p class="fw-bold">{{ item.month }}</p>
-                  <button type="button" class="btn fw-bold py-2 px-4">Get ticket</button>
+                  <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#events" role="button">Get ticket</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="d-flex justify-content-center">
-            <p class="text-secondary">Excited about our event? <span id="events-link">View all events <i class="fa-solid fa-arrow-right-long"></i></span> </p>
+            <p class="text-secondary">Excited about our event? <a id="events-link" href="#events">View all events <i class="fa-solid fa-arrow-right-long"></i></a></p>
           </div>
         </div>
       </section>
@@ -182,7 +180,7 @@
                 <span class="fs-4 fw-bold">Start today for getting </span>
                 <span class="fs-4" id="special-text">Online Certification</span>
                 <h2 class="fw-bold mb-4">You can be your own guiding star with our help!</h2>
-                <button type="button" class="btn fw-bold py-3 px-5">Get started now</button>
+                <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#feedbacks" role="button">Get started now</a>
               </div>
               <div class="col-2" id="img-col-right">
                 <img src="./assets/img/maxcoach-shape-02.png" alt="Max shape">
@@ -406,12 +404,11 @@ ul {
 .btn {
   font-size: 12px;
   background-color: $custom_blue;
-  color: white;
   &:hover {
     cursor: pointer;
     background-color: $mulled_wine;
-    color: white;
-  }
+    outline: none;
+  };
 };
 #careers-gallery {
   a {
@@ -480,12 +477,9 @@ ul {
 };
 #events {
   padding-bottom: 100px;
-  span {
-    color: $custom_blue;
-  };
   #events-link {
-    cursor: pointer;
-    text-decoration: underline;
+    color: $custom_blue;
+    text-decoration: underline 2px;
     text-decoration-color: lightgray;
     font-weight: bold;
   };
