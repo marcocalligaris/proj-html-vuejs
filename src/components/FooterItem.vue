@@ -66,8 +66,11 @@ footer {
       font-size: 13px;
     }
   };
-  a {
-    text-decoration: none;
+  ul {
+    padding: 0;
+        a {
+            text-decoration: none;
+        };
   };
   #top-arrow {
     width: 60px;
