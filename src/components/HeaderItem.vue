@@ -100,6 +100,9 @@ export default {
         margin-bottom: 2rem;
       };
       .btn#header-btn {
+        display: inline-block;
+        z-index: 10;
+        position: relative;
         background-color: $custom_blue;
         color: white;
         &:hover {
