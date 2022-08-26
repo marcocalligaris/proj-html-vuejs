@@ -180,7 +180,7 @@
                 <span class="fs-4 fw-bold">Start today for getting </span>
                 <span class="fs-4" id="special-text">Online Certification</span>
                 <h2 class="fw-bold mb-4">You can be your own guiding star with our help!</h2>
-                <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#feedbacks" role="button">Get started now</a>
+                <a class="btn btn-primary text-white fw-semibold py-2 px-4" href="#learning-options" role="button">Get started now</a>
               </div>
               <div class="col-2" id="img-col-right">
                 <img src="./assets/img/maxcoach-shape-02.png" alt="Max shape">
