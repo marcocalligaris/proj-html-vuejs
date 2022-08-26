@@ -1,5 +1,5 @@
 <template>
-  <div id="jumbotron" class="mb-5">
+  <div class="jumbotron mb-5">
     <div class="rounded-start p-2 d-flex flex-column align-items-center position-absolute end-0" id="side-menu">
       <a href="#"><i class="fa-solid fa-bars mb-2"></i></a>
       <a href="#"><i class="fa-solid fa-life-ring mb-2"></i></a>
@@ -33,7 +33,7 @@
           <div>
             <h1>Complete Your Dreams in JavaS Programming</h1>
             <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
-            <button type="button" class="btn fw-semibold py-2 px-4"><i class="fa-solid fa-download"></i> Download Free E-Book</button>
+            <button type="button" class="btn fw-semibold py-2 px-4" id="header-btn"><i class="fa-solid fa-download"></i> Download Free E-Book</button>
           </div>
         </div>
         <div class="col-6 text-end">
@@ -55,16 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/style.scss';
-.btn {
-  background-color: $custom_blue;
-  color: white;
-  &:hover {
-    background-color: $mulled_wine;
-    color: white;
-    cursor: pointer;
-  }
-}
-#jumbotron {
+.jumbotron {
   position: relative;
   background-color: $jumbotron;
   &::before {
@@ -97,16 +88,27 @@ export default {
       };
     };
   };
-  .col-4 {
-    h1 {
-      color: $mulled_wine;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    p {
-      color: $oslo_gray;
-      margin-bottom: 2rem;
-    }
+  .row {
+    .col-4 {
+      h1 {
+        color: $mulled_wine;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      };
+      p {
+        color: $oslo_gray;
+        margin-bottom: 2rem;
+      };
+      .btn#header-btn {
+        background-color: $custom_blue;
+        color: white;
+        &:hover {
+          background-color: $mulled_wine !important;
+          color: white;
+          cursor: pointer;
+        }
+      };
+    };
   }
 }
 </style>
