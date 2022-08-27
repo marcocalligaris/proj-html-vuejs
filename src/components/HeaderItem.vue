@@ -112,6 +112,11 @@ export default {
         }
       };
     };
+    #schooling {
+      display: inline-block;
+      z-index: 10;
+      position: relative;
+    }
   }
 }
 </style>
